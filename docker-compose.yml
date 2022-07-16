@@ -8,14 +8,14 @@ services:
       - 8000:80
     volumes:
       - /root/wordpress/html:/var/www/html
-      
     environment:
       - WORDPRESS_DB_HOST=mysql
       - WORDPRESS_DB_NAME=wordpress
       - WORDPRESS_DB_USER=wordpress
       - WORDPRESS_DB_PASSWORD=123456789  
     depends_on:
-       - db
+       - db  
+    
        
     
   db:
